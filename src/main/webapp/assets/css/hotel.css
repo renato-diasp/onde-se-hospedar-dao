@@ -1,0 +1,119 @@
+.go-to-home {
+  font-family: Lato;
+  text-transform: uppercase;
+  height: 30px;
+  align-items: center;
+  color: #276274;
+}
+
+.main-hotel {
+  padding: 32px;
+}
+
+.hotel-title {
+  font-family: 'Fugaz One', cursive;
+  color: #CFEDF2;
+  -webkit-text-stroke: 1px #276274;
+  font-size: 45px;
+}
+
+.container-image-hotel-info {
+  display: flex;
+}
+
+.daily-value,
+.address,
+.description,
+.oficial-link {
+  margin-left: 32px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+.daily-value,
+.description {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.oficial-link {
+  margin-top: 32px;
+}
+
+.address,
+.daily-value {
+  margin-top: 16px;
+}
+
+
+.how-to-get-title,
+.comment-title {
+  margin-top: 32px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+}
+
+#map {
+  margin-top: 20px;
+  width: 100%;
+  height: 350px;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating {
+  max-width: 200px;
+}
+
+.comment-input {
+  display: inline-block;
+  margin: 8px 0;
+  max-width: 300px;
+  background: #CFEDF2;
+  border: 1px solid rgb(39, 98, 116);
+  border-radius: 4px;
+  height: 35px;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.comment-input:focus,
+.comment-input:active {
+  outline: none;
+  border: 2px solid blue;
+}
+
+.textarea {
+  margin-top: 8px;
+  width: 100%;
+  background: #CFEDF2;
+  border: 1px solid rgb(39, 98, 116);
+  padding: 10px 16px;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  outline: none;
+}
+
+.textarea:focus,
+.textarea:active {
+  outline: none;
+  border: 2px solid blue;
+}
+
+
+.comment-button {
+  margin-top: 24px;
+  padding: 8px 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  background: #4C8D9B;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+}
