@@ -1,8 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" 
-     prefix="c" %>
-<jsp:useBean id="Hotels" type="java.util.ArrayList" scope="request"></jsp:useBean>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<jsp:useBean id="Hotels" scope="request" type="java.util.ArrayList<br.com.masters3.model.Hotel>" />
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -13,6 +11,7 @@
   <link rel="stylesheet" href="./assets/css/styles.css">
   <title>Projeto Gulliver - Onde se hospedar</title>
 </head>
+<body>
 <body>
   <header class="header">
     <section class="login-area">
@@ -43,7 +42,7 @@
       <img class="hotel-image" src="<c:out value="${hotel.imagePath}" />" alt="Entrada do hotel Blue Tree com escadas e vidros espelhados">
       <h3 class="hotel-title"><c:out value="${hotel.name}" /></h3>
       <div id="<c:out value="rating-${hotel.ratingId}"/>" class="rating"></div>
-      <a class="more-info" href="/OndeSeHospedar/hotels?id=<c:out value="${hotel.id}" />">Saiba mais</a>
+      <a class="more-info" href="/OndeSeHospedar/hotel?id=<c:out value="${hotel.id}" />">Saiba mais</a>
     </div>
 		
     </c:forEach>

@@ -1,11 +1,11 @@
-package model;
+package br.com.masters3.model;
 
 public class Hotel {
 
 	private int id;
 	private String name;
 	private String address;
-	private float price;
+	private int price;
 	private String site;
 	private String imagePath;
 	private String ratingId;
@@ -15,7 +15,7 @@ public class Hotel {
 		super();
 	}
 	
-	public Hotel(int id, String name, String address, float price, String site, String imagePath, String ratingId, String description) {
+	public Hotel(int id, String name, String address, int price, String site, String imagePath, String ratingId, String description) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -35,11 +35,11 @@ public class Hotel {
 		this.id = id;
 	}
 
-	public String getname() {
+	public String getName() {
 		return name;
 	}
 
-	public void setname(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -47,15 +47,15 @@ public class Hotel {
 		return address;
 	}
 
-	public void setaddress(String address) {
+	public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public float getPrice() {
+	public int getPrice() {
 		return price;
 	}
 
-	public void setPrice(float price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 
